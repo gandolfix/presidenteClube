@@ -6,38 +6,6 @@
     <title>presidenteClube</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="estilo.css" />
-	<script type="text/x-template" id="grid-template">
-		<table>
-		<col width="150">
-		<col width="100">
-		<col width="100">
-		<thead>
-			<tr>
-			<th v-for="key in columns"
-				@click="sortBy(key)"
-				:class="{ active: sortKey == key }">
-				{{ key | capitalize }}
-				<span class="arrow" :class="sortOrders[key] > 0 ? 'asc' : 'dsc'">
-				</span>
-			</th>
-			<th>Pago</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr v-for="(entry,row) in filteredData">
-			<td v-for="key in columns">
-				{{entry[key]}}
-			</td>
-			<td :class="{ active: filteredData[row].pago == 1 }"><input
-				id="checkbox"
-				type="checkbox"
-				:checked="filteredData[row].pago"
-			/>
-			</td>
-			</tr>
-		</tbody>
-		</table>
-	</script>
 </head>
 
 <body>
@@ -45,13 +13,11 @@
 		<button v-on:click="salva">Salva</button>
 		<button v-on:click="soma">Soma Ponto</button>
 		<button v-on:click="adiciona">Adiciona</button>
-		<div id="response"></div>
 		<form id="search">
 			Search
 			<input name="query" v-model="searchQuery">
 		</form>
-		<demo-grid :data="json" :columns="gridColumns" :filter-key="searchQuery">
-		</demo-grid>
+		<demo-grid :data="json" :columns="gridColumns" :filter-key="searchQuery"></demo-grid>
 
 		<button id="show-modal" @click="showModal = true">Show Modal</button>
 		<!-- use the modal component, pass in the prop -->
@@ -62,71 +28,13 @@
 		  -->
 			<h3 slot="header">custom header</h3>
 		</modal>
-
+		<div id="response"></div>
 	</div>
+	
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script src="src/modal.js"></script>
+	<script src="src/table.js"></script>
 	<script>
-		// register the grid component
-		Vue.component('demo-grid', {
-			template: '#grid-template',
-			props: {
-				data: Array,
-				columns: Array,
-				filterKey: String
-			},
-			data: function () {
-				var sortOrders = {}
-				this.columns.forEach(function (key) {
-					sortOrders[key] = 1
-				})
-				return {
-					sortKey: '',
-					sortOrders: sortOrders
-				}
-			},
-			computed: {
-				filteredData: function () {
-					var sortKey = this.sortKey
-					var filterKey = this.filterKey && this.filterKey.toLowerCase()
-					var order = this.sortOrders[sortKey] || 1
-					var data = this.data
-					if (filterKey) {
-						data = data.filter(function (row) {
-							return Object.keys(row).some(function (key) {
-								return String(row[key]).toLowerCase().indexOf(filterKey) > -1
-							})
-						})
-					}
-					if (sortKey) {
-						data = data.slice().sort(function (a, b) {
-							if(a[sortKey] > b[sortKey]){
-								return 1 * order
-							}else if(a[sortKey] < b[sortKey]){
-								return -1 * order
-							}else{
-								a = a["jogos"]
-								b = b["jogos"]
-							}
-							return (a === b ? 0 : a > b ? -1 : 1) * order								
-						})
-					}
-					return data
-				}
-			},
-			filters: {
-				capitalize: function (str) {
-					return str.charAt(0).toUpperCase() + str.slice(1)
-				}
-			},
-			methods: {
-				sortBy: function (key) {
-					this.sortKey = key
-					this.sortOrders[key] = this.sortOrders[key] * -1
-				}
-			}
-		})
-
 		var app = new Vue({
 			el: "#app",
 			data: {
@@ -134,13 +42,12 @@
 				searchQuery: '',
 				gridColumns: ['nome', 'pontos', 'jogos'],
 				json: null
-				//showModal: true
 			},
 			created: function () {
 				fetch("atletas.json")
 					.then(r => r.json())
 					.then(json => {
-						this.json = json.atletas;
+						this.json = json;
 					});
 			},
 			methods: {

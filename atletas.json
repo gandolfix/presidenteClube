@@ -1,128 +1,122 @@
-{
-	"conf": {
-		"id": 1,
-		"esporte": "futebol"
+[
+	{
+		"nome": "Anderson",
+		"jogos": 12,
+		"pontos": 16,
+		"pago": 1
 	},
-	"atletas": [
-		{
-			"nome": "Anderson",
-			"jogos": 12,
-			"pontos": 13,
-			"pago": 1
-		},
-		{
-			"nome": "B1",
-			"jogos": 9,
-			"pontos": 10,
-			"pago": 1
-		},
-		{
-			"nome": "Bob",
-			"jogos": 12,
-			"pontos": 14,
-			"pago": 1
-		},
-		{
-			"nome": "Boff",
-			"jogos": 10,
-			"pontos": 20,
-			"pago": 0
-		},
-		{
-			"nome": "Didão",
-			"jogos": 14,
-			"pontos": 24,
-			"pago": 0
-		},
-		{
-			"nome": "Digo",
-			"jogos": 13,
-			"pontos": 18,
-			"pago": 1
-		},
-		{
-			"nome": "Figo",
-			"jogos": 14,
-			"pontos": 18,
-			"pago": 1
-		},
-		{
-			"nome": "Fran",
-			"jogos": 8,
-			"pontos": 4,
-			"pago": 1
-		},
-		{
-			"nome": "Gui",
-			"jogos": 7,
-			"pontos": 8,
-			"pago": 1
-		},
-		{
-			"nome": "Isma",
-			"jogos": 9,
-			"pontos": 13,
-			"pago": 1
-		},
-		{
-			"nome": "Junior",
-			"jogos": 3,
-			"pontos": 3,
-			"pago": 1
-		},
-		{
-			"nome": "Max",
-			"jogos": 10,
-			"pontos": 9,
-			"pago": 1
-		},
-		{
-			"nome": "Nei",
-			"jogos": 13,
-			"pontos": 22,
-			"pago": 1
-		},
-		{
-			"nome": "Padilha",
-			"jogos": 6,
-			"pontos": 10,
-			"pago": 1
-		},
-		{
-			"nome": "Rufinha",
-			"jogos": 10,
-			"pontos": 6,
-			"pago": 1
-		},
-		{
-			"nome": "Vargas",
-			"jogos": 10,
-			"pontos": 15,
-			"pago": 1
-		},
-		{
-			"nome": "Veneza",
-			"jogos": 13,
-			"pontos": 21,
-			"pago": 1
-		},
-		{
-			"nome": "Vini",
-			"jogos": 13,
-			"pontos": 15,
-			"pago": 1
-		},
-		{
-			"nome": "William",
-			"jogos": 3,
-			"pontos": 6,
-			"pago": 1
-		},
-		{
-			"nome": "Zé",
-			"jogos": 13,
-			"pontos": 18,
-			"pago": 1
-		}
-	]
-}
+	{
+		"nome": "B1",
+		"jogos": 9,
+		"pontos": 10,
+		"pago": 1
+	},
+	{
+		"nome": "Bob",
+		"jogos": 12,
+		"pontos": 14,
+		"pago": 1
+	},
+	{
+		"nome": "Boff",
+		"jogos": 10,
+		"pontos": 20,
+		"pago": 0
+	},
+	{
+		"nome": "Didão",
+		"jogos": 14,
+		"pontos": 24,
+		"pago": 0
+	},
+	{
+		"nome": "Digo",
+		"jogos": 13,
+		"pontos": 18,
+		"pago": 1
+	},
+	{
+		"nome": "Figo",
+		"jogos": 14,
+		"pontos": 18,
+		"pago": 1
+	},
+	{
+		"nome": "Fran",
+		"jogos": 8,
+		"pontos": 4,
+		"pago": 1
+	},
+	{
+		"nome": "Gui",
+		"jogos": 7,
+		"pontos": 8,
+		"pago": 1
+	},
+	{
+		"nome": "Isma",
+		"jogos": 9,
+		"pontos": 13,
+		"pago": 1
+	},
+	{
+		"nome": "Junior",
+		"jogos": 3,
+		"pontos": 3,
+		"pago": 1
+	},
+	{
+		"nome": "Max",
+		"jogos": 10,
+		"pontos": 9,
+		"pago": 1
+	},
+	{
+		"nome": "Nei",
+		"jogos": 13,
+		"pontos": 22,
+		"pago": 1
+	},
+	{
+		"nome": "Padilha",
+		"jogos": 6,
+		"pontos": 10,
+		"pago": 1
+	},
+	{
+		"nome": "Rufinha",
+		"jogos": 10,
+		"pontos": 6,
+		"pago": 1
+	},
+	{
+		"nome": "Vargas",
+		"jogos": 10,
+		"pontos": 15,
+		"pago": 1
+	},
+	{
+		"nome": "Veneza",
+		"jogos": 13,
+		"pontos": 21,
+		"pago": 1
+	},
+	{
+		"nome": "Vini",
+		"jogos": 13,
+		"pontos": 15,
+		"pago": 1
+	},
+	{
+		"nome": "William",
+		"jogos": 3,
+		"pontos": 6,
+		"pago": 1
+	},
+	{
+		"nome": "Zé",
+		"jogos": 13,
+		"pontos": 18,
+		"pago": 1
+	}
+]
