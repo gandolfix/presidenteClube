@@ -14,19 +14,12 @@ Vue.component('demo-grid', {
             <span class="arrow" :class="sortOrders[key] > 0 ? 'asc' : 'dsc'">
             </span>
         </th>
-        <th>Pago</th>
         </tr>
     </thead>
     <tbody>
         <tr v-for="(entry,row) in filteredData">
         <td v-for="key in columns">
             {{entry[key]}}
-        </td>
-        <td :class="{ active: filteredData[row].pago == 1 }"><input
-            id="checkbox"
-            type="checkbox"
-            :checked="filteredData[row].pago"
-        />
         </td>
         </tr>
     </tbody>

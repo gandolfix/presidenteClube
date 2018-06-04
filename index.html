@@ -12,19 +12,10 @@
 
 	<div class="topnav" id="myTopnav"> 
 		<a href="#home" class="logo"><img src="images/pClube.png"></a>
-		<a href="#news">News</a>
-		<a href="#contact">Contact</a>
-		<div class="dropdown">
-			<button class="dropbtn">Dropdown 
-			<i class="fa fa-caret-down"></i>
-			</button>
-			<div class="dropdown-content">
-			<a href="#">Link 1</a>
-			<a href="#">Link 2</a>
-			<a href="#">Link 3</a>
-			</div>
-		</div> 
-		<a href="#about">About</a>
+		<a href="#news">Admin</a>
+		<a href="#news">Tabela</a>
+		<a href="#contact">Times</a>
+		<a href="#about">Login</a>
 		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 	</div>
 
@@ -39,7 +30,8 @@
 		}
 	</script>
 
-	<div id="app">						  
+	<div id="app">	
+		<!--					  
 		<button v-on:click="salva">Salva</button>
 		<button v-on:click="soma">Soma Ponto</button>
 		<button v-on:click="adiciona">Adiciona</button>
@@ -47,9 +39,10 @@
 			Search
 			<input name="query" v-model="searchQuery">
 		</form>
+		-->
 		<demo-grid :data="json" :columns="gridColumns" :filter-key="searchQuery"></demo-grid>
 
-		<button id="show-modal" @click="showModal = true">Show Modal</button>
+		<!--<button id="show-modal" @click="showModal = true">Show Modal</button>-->
 		<!-- use the modal component, pass in the prop -->
 		<modal v-if="showModal" @close="showModal = false" @add="paga">
 			<!--
@@ -70,7 +63,7 @@
 			data: {
 				showModal: false,
 				searchQuery: '',
-				gridColumns: ['nome', 'pontos', 'jogos'],
+				gridColumns: ['nome', 'pontos', 'jogos', 'vai', 'pago'],
 				json: null
 			},
 			created: function () {

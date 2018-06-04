@@ -1,122 +1,182 @@
 [
 	{
 		"nome": "Anderson",
+		"posicao1": "meio",
+		"posicao2": "ataque",
 		"jogos": 12,
 		"pontos": 16,
-		"pago": 1
+		"vai": "sim",
+		"pago": "sim"
 	},
 	{
 		"nome": "B1",
+		"posicao1": "zaga",
+		"posicao2": "lateral",
 		"jogos": 9,
 		"pontos": 10,
-		"pago": 1
+		"vai": "sim",
+		"pago": "sim"
 	},
 	{
 		"nome": "Bob",
+		"posicao1": "lateral",
+		"posicao2": "meio",
 		"jogos": 12,
 		"pontos": 14,
-		"pago": 1
+		"vai": "sim",
+		"pago": "sim"
 	},
 	{
 		"nome": "Boff",
+		"posicao1": "meio",
+		"posicao2": "ataque",		
 		"jogos": 10,
 		"pontos": 20,
-		"pago": 0
+		"vai": "sim",
+		"pago": "não"
 	},
 	{
 		"nome": "Didão",
+		"posicao1": "zaga",
+		"posicao2": "meio",		
 		"jogos": 14,
 		"pontos": 24,
-		"pago": 0
+		"vai": "sim",
+		"pago": "não"
 	},
 	{
 		"nome": "Digo",
+		"posicao1": "meio",
+		"posicao2": "ataque",		
 		"jogos": 13,
 		"pontos": 18,
-		"pago": 1
+		"vai": "sim",
+		"pago": "sim"
 	},
 	{
 		"nome": "Figo",
+		"posicao1": "meio",
+		"posicao2": "zaga",		
 		"jogos": 14,
 		"pontos": 18,
-		"pago": 1
+		"vai": "sim",
+		"pago": "sim"
 	},
 	{
 		"nome": "Fran",
+		"posicao1": "zaga",
+		"posicao2": "lateral",		
 		"jogos": 8,
 		"pontos": 4,
-		"pago": 1
+		"vai": "sim",
+		"pago": "sim"
 	},
 	{
 		"nome": "Gui",
+		"posicao1": "meio",
+		"posicao2": "ataque",
 		"jogos": 7,
 		"pontos": 8,
-		"pago": 1
+		"vai": "sim",
+		"pago": "sim"
 	},
 	{
 		"nome": "Isma",
+		"posicao1": "meio",
+		"posicao2": "lateral",
 		"jogos": 9,
 		"pontos": 13,
-		"pago": 1
+		"vai": "sim",
+		"pago": "sim"
 	},
 	{
 		"nome": "Junior",
+		"posicao1": "zaga",
+		"posicao2": "meio",
 		"jogos": 3,
 		"pontos": 3,
-		"pago": 1
+		"vai": "sim",
+		"pago": "sim"
 	},
 	{
 		"nome": "Max",
+		"posicao1": "goleiro",
+		"posicao2": "",
 		"jogos": 10,
 		"pontos": 9,
-		"pago": 1
+		"vai": "sim",
+		"pago": "sim"
 	},
 	{
 		"nome": "Nei",
+		"posicao1": "lateral",
+		"posicao2": "meio",
 		"jogos": 13,
 		"pontos": 22,
-		"pago": 1
+		"vai": "sim",
+		"pago": "sim"
 	},
 	{
 		"nome": "Padilha",
+		"posicao1": "ataque",
+		"posicao2": "lateral",
 		"jogos": 6,
 		"pontos": 10,
-		"pago": 1
+		"vai": "sim",
+		"pago": "sim"
 	},
 	{
 		"nome": "Rufinha",
+		"posicao1": "lateral",
+		"posicao2": "ataque",
 		"jogos": 10,
 		"pontos": 6,
-		"pago": 1
+		"vai": "sim",
+		"pago": "sim"
 	},
 	{
 		"nome": "Vargas",
+		"posicao1": "lateral",
+		"posicao2": "zaga",
 		"jogos": 10,
 		"pontos": 15,
-		"pago": 1
+		"vai": "sim",
+		"pago": "sim"
 	},
 	{
 		"nome": "Veneza",
+		"posicao1": "ataque",
+		"posicao2": "meio",
 		"jogos": 13,
 		"pontos": 21,
-		"pago": 1
+		"vai": "sim",
+		"pago": "sim"
 	},
 	{
 		"nome": "Vini",
+		"posicao1": "lateral",
+		"posicao2": "meio",
 		"jogos": 13,
 		"pontos": 15,
-		"pago": 1
+		"vai": "sim",
+		"pago": "sim"
 	},
 	{
 		"nome": "William",
+		"posicao1": "lateral",
+		"posicao2": "meio",
 		"jogos": 3,
 		"pontos": 6,
-		"pago": 1
+		"vai": "sim",
+		"pago": "sim"
 	},
 	{
 		"nome": "Zé",
+		"posicao1": "goleiro",
+		"posicao2": "",
 		"jogos": 13,
 		"pontos": 18,
-		"pago": 1
+		"vai": "sim",
+		"pago": "sim"
 	}
 ]
